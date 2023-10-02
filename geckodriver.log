@@ -1,0 +1,618 @@
+1696201701187	geckodriver	INFO	Listening on 127.0.0.1:58721
+1696201704240	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58722" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileNxI1Os"
+1696201722112	geckodriver	INFO	Listening on 127.0.0.1:58748
+1696201725161	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58749" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileNdAQlW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696201727024	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696201727630	Marionette	INFO	Listening on port 58758
+Read port: 58758
+WebDriver BiDi listening on ws://127.0.0.1:58749
+1696201727992	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58749/devtools/browser/5f3fcc13-ad44-4e0c-9d4f-10eedced1ec6
+1696201767674	Marionette	INFO	Stopped listening on port 58758
+Dynamically enable window occlusion 1
+ng command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58799" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileBp1git"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696201739975	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696201740121	Marionette	INFO	Listening on port 58808
+WebDriver BiDi listening on ws://127.0.0.1:58799
+Read port: 58808
+1696201740354	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58799/devtools/browser/c6e1442c-def5-44c9-9f38-f475f8ec2990
+1696201754599	geckodriver	INFO	Listening on 127.0.0.1:58850
+1696201757606	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58851" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileiI3kvU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696201757881	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696201758023	Marionette	INFO	Listening on port 58864
+WebDriver BiDi listening on ws://127.0.0.1:58851
+Read port: 58864
+1696201758230	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58851/devtools/browser/7e82a3fe-08ea-4418-a4c5-fb5b67d9a39f
+1696201760430	Marionette	INFO	Stopped listening on port 58864
+Dynamically enable window occlusion 1
+1696201764918	geckodriver	INFO	Listening on 127.0.0.1:58888
+1696201767947	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58889" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilegNWgNJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696201768232	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696201768362	Marionette	INFO	Listening on port 58897
+WebDriver BiDi listening on ws://127.0.0.1:58889
+Read port: 58897
+1696201768532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58889/devtools/browser/e71566a8-43e4-4a12-a745-1bed246711a1
+1696201771352	geckodriver	INFO	Listening on 127.0.0.1:58930
+1696201774360	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58931" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilewwprFE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696201774625	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696201774749	Marionette	INFO	Listening on port 58945
+WebDriver BiDi listening on ws://127.0.0.1:58931
+Read port: 58945
+1696201774919	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58931/devtools/browser/678b3732-f0cb-4a5f-ae2a-19987116eb62
+1696206494602	geckodriver	INFO	Listening on 127.0.0.1:62428
+1696206497816	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62429" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileuqZDtb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696206498137	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696206498309	Marionette	INFO	Listening on port 62439
+WebDriver BiDi listening on ws://127.0.0.1:62429
+Read port: 62439
+1696206498512	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62429/devtools/browser/6be6bf81-a0ba-4e7b-aed7-e3bd864bb08d
+1696206588981	geckodriver	INFO	Listening on 127.0.0.1:62534
+1696206592069	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62535" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileTGwLO2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696206592358	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696206592533	Marionette	INFO	Listening on port 62545
+WebDriver BiDi listening on ws://127.0.0.1:62535
+Read port: 62545
+1696206592738	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62535/devtools/browser/9ca00b4c-011e-4991-82c2-19058097a4b2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696206602427	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696206993917	geckodriver	INFO	Listening on 127.0.0.1:62863
+1696207006091	geckodriver	INFO	Listening on 127.0.0.1:62875
+1696207009106	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62876" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilebuuKUw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207009396	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207009569	Marionette	INFO	Listening on port 62884
+WebDriver BiDi listening on ws://127.0.0.1:62876
+Read port: 62884
+1696207009772	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62876/devtools/browser/b36d9a7d-1263-4001-8afc-b9c6ea16b83d
+1696207109456	geckodriver	INFO	Listening on 127.0.0.1:62996
+1696207112493	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62997" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileu5moal"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207112794	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207112969	Marionette	INFO	Listening on port 63006
+WebDriver BiDi listening on ws://127.0.0.1:62997
+Read port: 63006
+1696207113190	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62997/devtools/browser/e51a8c39-c5e0-440a-93a0-b0a12a8b477b
+1696207162481	geckodriver	INFO	Listening on 127.0.0.1:63066
+1696207165529	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63067" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileS3D7Rh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207165819	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207165994	Marionette	INFO	Listening on port 63075
+WebDriver BiDi listening on ws://127.0.0.1:63067
+Read port: 63075
+1696207166193	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63067/devtools/browser/ff136657-c106-4c48-a7c8-cb06bf61cde3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207169154	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207170306	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207171659	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207172828	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207173963	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207175115	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207176268	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207177470	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207178605	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207179741	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207180886	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207182029	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207183180	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207184317	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207185471	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207186655	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207187808	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207188994	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207190144	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207191316	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207192459	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207193620	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207209362	geckodriver	INFO	Listening on 127.0.0.1:63140
+1696207212371	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63141" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileiVNOHF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207212663	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207212835	Marionette	INFO	Listening on port 63149
+WebDriver BiDi listening on ws://127.0.0.1:63141
+Read port: 63149
+1696207213041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63141/devtools/browser/26165664-9f0e-4f1d-9813-18b3d6f95d61
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207217315	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207221424	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207225535	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207229642	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207233764	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207237875	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207242014	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207246141	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207250254	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207254377	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207258464	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207262580	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207266686	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207270773	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207274875	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207278974	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207283098	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207288695	geckodriver	INFO	Listening on 127.0.0.1:63234
+1696207291712	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63235" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileTwV135"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207292009	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207292182	Marionette	INFO	Listening on port 63244
+WebDriver BiDi listening on ws://127.0.0.1:63235
+Read port: 63244
+1696207292394	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63235/devtools/browser/30b0d9d5-6233-4dc2-a7eb-1aa0abc1b81e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207296926	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207301043	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207305150	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207309245	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207313373	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207317498	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207321608	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207325730	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207329861	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207333961	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207338070	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207342178	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207346294	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207350400	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207354502	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207358611	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207362702	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207366810	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207370911	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207375043	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207379169	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207383308	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207387419	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207391543	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207395643	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207399758	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207403874	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207407986	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207412099	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207416207	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207420312	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207424411	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207428507	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207432626	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207436750	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207440856	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207444955	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207449098	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207453232	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207457337	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207461442	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207465542	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207469647	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207473779	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207477887	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207481989	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207497455	geckodriver	INFO	Listening on 127.0.0.1:63420
+1696207500474	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63421" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileN5xtjP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207500780	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207500953	Marionette	INFO	Listening on port 63430
+WebDriver BiDi listening on ws://127.0.0.1:63421
+Read port: 63430
+1696207501163	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63421/devtools/browser/2e111391-db32-4ea8-adcf-0ef66db9d8eb
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207506017	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207510126	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207514239	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www4.suframa.gov.br/Login.aspx, line 47: Script terminated by timeout at:
+@https://www4.suframa.gov.br/Login.aspx:47:110
+
+1696207517350	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: resource://gre/modules/Prompter.sys.mjs, line 1194: NS_ERROR_NOT_AVAILABLE: prompt aborted by user
+1696207517730	Marionette	INFO	Stopped listening on port 63430
+Dynamically enable window occlusion 1
+1696207605461	geckodriver	INFO	Listening on 127.0.0.1:63531
+1696207608467	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63532" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileQqn6Ny"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207608756	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207608927	Marionette	INFO	Listening on port 63542
+WebDriver BiDi listening on ws://127.0.0.1:63532
+Read port: 63542
+1696207609127	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63532/devtools/browser/79057393-4ab2-4634-aedb-7afdcdcea36c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207613638	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207617728	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207621829	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207625942	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207630038	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207634141	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207638246	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207642347	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207646493	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207650618	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207654745	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207658862	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207662960	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207667064	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207671169	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207675255	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207679358	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207683465	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207687574	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207691684	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207695790	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207699898	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207704008	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207708131	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207712242	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207716352	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207826783	geckodriver	INFO	Listening on 127.0.0.1:63735
+1696207829820	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63736" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileGh5hBd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207830125	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207830288	Marionette	INFO	Listening on port 63744
+WebDriver BiDi listening on ws://127.0.0.1:63736
+Read port: 63744
+1696207830503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63736/devtools/browser/05bb4881-1c1b-4538-9562-0209cea76a30
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207834814	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207838922	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207862763	geckodriver	INFO	Listening on 127.0.0.1:63800
+1696207865775	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63801" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileoD2HDw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207866097	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207866270	Marionette	INFO	Listening on port 63810
+WebDriver BiDi listening on ws://127.0.0.1:63801
+Read port: 63810
+1696207866470	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63801/devtools/browser/34eafce9-a812-415a-b381-a0b6a678db66
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207870895	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207875003	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207879119	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207883242	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207887349	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207891454	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207907778	geckodriver	INFO	Listening on 127.0.0.1:63868
+1696207910812	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63869" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilenOByOy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207911106	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207911274	Marionette	INFO	Listening on port 63878
+WebDriver BiDi listening on ws://127.0.0.1:63869
+Read port: 63878
+1696207911479	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63869/devtools/browser/e5816897-8616-4ab6-b4bf-874fc8d734fc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207916041	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207920150	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207934748	geckodriver	INFO	Listening on 127.0.0.1:63929
+1696207937777	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63930" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileUGOskN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207938067	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207938239	Marionette	INFO	Listening on port 63940
+WebDriver BiDi listening on ws://127.0.0.1:63930
+Read port: 63940
+1696207938438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63930/devtools/browser/d3d52d96-6e90-4d25-ab5a-745e775a83a6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207942896	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207947003	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207951113	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207955234	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207984638	geckodriver	INFO	Listening on 127.0.0.1:64004
+1696207987647	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64005" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileQ74xG7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696207987939	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696207988109	Marionette	INFO	Listening on port 64014
+WebDriver BiDi listening on ws://127.0.0.1:64005
+Read port: 64014
+1696207988311	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64005/devtools/browser/ef95fb79-03eb-491a-a575-636842d414ad
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696207992925	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696207997027	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208001135	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208005240	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208009351	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208013464	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208017580	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208032838	geckodriver	INFO	Listening on 127.0.0.1:64080
+1696208035858	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64081" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileFaN2n5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208036149	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208036322	Marionette	INFO	Listening on port 64090
+WebDriver BiDi listening on ws://127.0.0.1:64081
+Read port: 64090
+1696208036531	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64081/devtools/browser/170d275e-1610-451a-ab6b-70896d9af8fc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208040820	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208045463	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208050105	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208054741	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208059395	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208064042	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208068692	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208072493	geckodriver	INFO	Listening on 127.0.0.1:64152
+1696208075505	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64153" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilealvrCG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208075799	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208075974	Marionette	INFO	Listening on port 64162
+WebDriver BiDi listening on ws://127.0.0.1:64153
+Read port: 64162
+1696208076184	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64153/devtools/browser/00a6be80-068c-4a97-b834-64f77fb37265
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208080485	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208085127	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208089775	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208094402	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208099045	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208103688	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208108350	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208112995	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208139121	geckodriver	INFO	Listening on 127.0.0.1:64236
+1696208142142	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64237" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileAfMGAH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208142435	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208142609	Marionette	INFO	Listening on port 64245
+WebDriver BiDi listening on ws://127.0.0.1:64237
+Read port: 64245
+1696208142812	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64237/devtools/browser/f743a30b-a382-4e86-93b8-c7eb9c1d48a1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208148111	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208153793	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208159485	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208240258	geckodriver	INFO	Listening on 127.0.0.1:64338
+1696208243268	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64339" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilebmjylk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208243557	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208243730	Marionette	INFO	Listening on port 64349
+WebDriver BiDi listening on ws://127.0.0.1:64339
+Read port: 64349
+1696208243936	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64339/devtools/browser/bb1c127c-517f-4006-bcda-4e12cbd5b9fa
+1696208257241	geckodriver	INFO	Listening on 127.0.0.1:64391
+1696208260252	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64392" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofile1Yt2il"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208260542	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208260717	Marionette	INFO	Listening on port 64400
+WebDriver BiDi listening on ws://127.0.0.1:64392
+Read port: 64400
+1696208260916	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64392/devtools/browser/ed06864c-8e2a-41fa-9410-ca3b87b50ad5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208266547	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208272209	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208277887	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208299874	geckodriver	INFO	Listening on 127.0.0.1:64457
+1696208302886	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64458" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofiles42sv3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208303171	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208303345	Marionette	INFO	Listening on port 64467
+WebDriver BiDi listening on ws://127.0.0.1:64458
+Read port: 64467
+1696208303551	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64458/devtools/browser/42b2eb3e-0372-418f-b524-1bbf3677b6c7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208309834	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208429592	geckodriver	INFO	Listening on 127.0.0.1:64590
+1696208432618	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64591" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilexbpOKJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208432916	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208433090	Marionette	INFO	Listening on port 64599
+WebDriver BiDi listening on ws://127.0.0.1:64591
+Read port: 64599
+1696208433288	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64591/devtools/browser/c7ec0b1c-ce35-437f-9163-43ba80018ec8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+JavaScript warning: https://www4.suframa.gov.br/Login.aspx, 1696208535522	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64693" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofile1ZPYBX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208535818	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208535993	Marionette	INFO	Listening on port 64704
+WebDriver BiDi listening on ws://127.0.0.1:64693
+Read port: 64704
+1696208536196	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64693/devtools/browser/b2ac5bbc-6b4c-46bd-8666-1540685f16d6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208539673	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208541538	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208542691	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208543841	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208544995	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208546148	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208547333	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208548502	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208549638	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208550824	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208551976	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208553137	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208554289	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208555459	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208615442	geckodriver	INFO	Listening on 127.0.0.1:64788
+1696208618456	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64789" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilep6Rhnq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208618748	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208618920	Marionette	INFO	Listening on port 64798
+WebDriver BiDi listening on ws://127.0.0.1:64789
+Read port: 64798
+1696208619147	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64789/devtools/browser/b5854f38-e51b-433d-899d-5fde7d5afca0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208623164	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208625160	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208626990	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208628176	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208629329	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208630497	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208631667	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208632818	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208634025	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208635178	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208670479	geckodriver	INFO	Listening on 127.0.0.1:64861
+1696208673482	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64862" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofileVwJxbh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208673778	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208673958	Marionette	INFO	Listening on port 64871
+WebDriver BiDi listening on ws://127.0.0.1:64862
+Read port: 64871
+1696208674185	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64862/devtools/browser/423046f3-1f3d-4957-90b9-8be4c8d22c6e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208677922	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208679899	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208681846	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208683698	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208684867	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208686006	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208687141	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208688287	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208689446	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208690602	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208709621	geckodriver	INFO	Listening on 127.0.0.1:64924
+1696208712667	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64925" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilegz0XZJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208712973	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208713155	Marionette	INFO	Listening on port 64934
+WebDriver BiDi listening on ws://127.0.0.1:64925
+Read port: 64934
+1696208713362	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64925/devtools/browser/2018978a-df92-46a0-a31b-d622b9414798
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+1696208717021	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208718153	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208719307	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208720457	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208721610	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208722745	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208723943	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208725083	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208726236	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208727399	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208728557	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208729708	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208730864	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208732007	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208733141	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208734275	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208735416	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208736542	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208737691	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208738829	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208739972	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208741123	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208742274	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208743416	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208744565	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208745716	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208746877	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696208750655	geckodriver	INFO	Listening on 127.0.0.1:64998
+1696208753688	mozrunner::runner	INFO	Running command: "D:\\Programas\\firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64999" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leona\\AppData\\Local\\Temp\\rust_mozprofilev97w6v"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696208753977	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696208754149	Marionette	INFO	Listening on port 65008
+WebDriver BiDi listening on ws://127.0.0.1:64999
+Read port: 65008
+1696208754350	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64999/devtools/browser/6af9e688-c440-4d4a-baab-ebe5bd7f087c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www4.suframa.gov.br."
+Invalid port. Exiting...
+Invalid port. Exiting...
