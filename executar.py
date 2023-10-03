@@ -2,7 +2,7 @@ import os
 from suframa import Suframa
 import pandas as pd
 import time
-from days import first_lasted_day
+from date import *
 
 import calendar
 
@@ -10,41 +10,80 @@ from datetime import datetime
 
 
 # suframa.login()
-data_atual = datetime.now()
-ano = data_atual.strftime('%Y')
-mes = data_atual.strftime('%m')
-ano_mes = f'{ano}\\{mes}-{ano}'
-path = os.path.join('G:\\Meu Drive\\ENCONTADORES\\[1- CENTRAL DE OBRIGACOES E ARQUIVOS]',
-                    f'1 - IMPOSTOS - TRIBUTOS - TAXAS\\1 - SUFRAMA\\{ano}\\{ano_mes}')
 
-df = pd.read_excel('senhas.xlsx', engine='openpyxl')
+path = make_path()
+
+dtype_dict = {'USUARIO': str}
+df = pd.read_excel('senhas.xlsx', engine='openpyxl', dtype=dtype_dict)
 df['Erro'] = False
 for index, row in df.iterrows():
     try:
         user = row['USUARIO']
         password = row['Senha Nova']
+        
+        paste = row['Pasta']
+        
+        empresa = row['Razão Social']
+
+        print('usuário: ', user)
+        
+        path = os.path.join(path, paste)
         suframa = Suframa(path)
-        input('Enter')
+        # input('Enter')
         time.sleep(2)
-        suframa.make_login(user, password)
+        login = suframa.make_login(user, password, 3)
+        if login:
+            
+            if login == 'pausa':
+                start_time = time.time()
+                while True:
+                    if suframa.verify_login():
+                        break
+                    
+                    elapsed_time = time.time() - start_time
+                    if elapsed_time >= 5*60:  # 300 segundos = 5 minutos
+                        print("Tempo limite de 5 minutos atingido. Saindo do loop.")
+                        continue
+                    time.sleep(5)
+                
+            elif login != 'fez login': 
+                print('Login errado ou acabou as tentativas')
+                time.sleep(5)
+                continue
+            
+        suframa.get_gru()
+        suframa.select_taxa()
+
+        if suframa.download_gru():
+            suframa.avancar_click()
+            suframa.gerar_gru_click()
+        
         suframa.get_imprimir_gru()
 
         suframa.get_gru()
         suframa.select_taxa()
-        suframa.download_gru()
-        suframa.avancar_click()
-        suframa.gerar_gru_click()
+        
+        if suframa.download_gru():
+            suframa.avancar_click()
+            suframa.gerar_gru_click()
+        
+        suframa.get_imprimir_gru()
 
         primeiro_dia, ultimo_dia = first_lasted_day(ano, mes)
-        suframa.inserir_datas(primeiro_dia, ultimo_dia)
+        
+        ano, mes, _ = day_now()
+        
+        nome = f'{mes}-{ano} Extrato Suframa - {empresa}'
+        create_dir(path)
+        
+        if suframa.inserir_datas(primeiro_dia, ultimo_dia, nome):
+            df.at[index, 'Erro'] = 'Sem registro'
+            df.to_excel('resultado.xlsx', index=False)
+            continue
+        
+        
         print('terminou')
     except Exception as e:
         df.at[index, 'Erro'] = True
         df.to_excel('resultado.xlsx', index=False)
-        print(f'Erro na linha {index}: {str(e)}')
-
-    # break
-    # print(row)
-
-    # Faça alguma ação com usuário e senha
-    # suframa.fazer_alguma_acao(usuario, senha)
+    # print(f'Erro na linha {index}: {str(e)}')

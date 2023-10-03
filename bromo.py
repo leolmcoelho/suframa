@@ -8,9 +8,9 @@ from selenium.webdriver.support.ui import Select
 
 class Interation:
     
-    
-    def __init__(self, driver):
-        
+    #wait = WebDriverWait(self.driver, time)
+    def __init__(self, driver, time = 10):
+        self.wait = WebDriverWait(self.driver, time)
         self.driver = driver
 
     
@@ -58,7 +58,7 @@ class Interation:
     def element(self, tag:str, time:int=15, method:str='xpath'):
         
         WebDriverWait(self.driver, time).until(
-                EC.presence_of_element_located((method, tag)))
+                EC.element_to_be_clickable((method, tag)))
         element = self.driver.find_element(method, tag)
         
         return element

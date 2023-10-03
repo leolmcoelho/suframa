@@ -1,5 +1,5 @@
 import logging as log
-import pickle
+
 import traceback
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -10,12 +10,13 @@ from datetime import datetime
 from selenium.common.exceptions import StaleElementReferenceException
 
 
-from selenium.webdriver.firefox.service import Service as GeckoService
-
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium import webdriver
-import datetime
+
 from bromo import Interation
+
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from ocr import ocr_with_gray_filter
 
@@ -35,7 +36,7 @@ class Suframa(Interation):
 
         # options = webdriver.ChromeOptions()
         self.host = 'https://www4.suframa.gov.br/Login.aspx'
-        # perfil_usuario_dir = r'C:\Users\leona\AppData\Local\Google\Chrome\User Data\Profile 5'
+        perfil_usuario_dir = r'C:\Users\leona\AppData\Local\Google\Chrome\User Data\Profile 5'
 
         logging.basicConfig(filename='chromedriver.log', level=logging.WARNING)
 
@@ -50,10 +51,11 @@ class Suframa(Interation):
             'download.default_directory': path,
             'download.prompt_for_download': False,
             'download.directory_upgrade': True,
-            'safebrowsing.enabled': False,  # Isso desativa a verificação de segurança, use com cautela,
+            'safebrowsing.enabled': False,
             "printing.print_preview_sticky_settings.enabled": False,
 
-            "printing.print_preview_sticky_settings.printerName": "Save as PDF"
+            "printing.print_preview_sticky_settings.printerName": "Save as PDF",
+
         })
         # options.page_load_strategy = 'none'
         options.add_argument('--log-level=1')
@@ -64,21 +66,19 @@ class Suframa(Interation):
 
         # options.add_argument(r'user-data-dir={}\config\Profile 2'.format(os.getcwd()))
 
-        self.driver = webdriver.Chrome(service=service, options=options,
-                                       service_log_path='chromedriver.log')
+        self.driver = webdriver.Chrome(service=service, options=options)
 
         super().__init__(self.driver)
         self.url = self.host
         self.driver.get(self.url)
 
-    def login(self, user, password, captcha):
-
-        # time.sleep(1)
+    def login(self, user, password, captcha=None):
         try:
             self.write('//*[@id="ContentPlaceHolder1_txtLogin"]', user)
             self.write('//*[@id="ContentPlaceHolder1_txtSenha"]', password)
-
-            self.write('//*[@id="ContentPlaceHolder1_CodigoCaptcha"]', captcha)
+            if captcha:
+                self.write('//*[@id="ContentPlaceHolder1_CodigoCaptcha"]', captcha)
+            # input('teste')
             self.click('//*[@id="ContentPlaceHolder1_Button1"]')
             return True
         except Exception as e:
@@ -94,7 +94,6 @@ class Suframa(Interation):
                 if screenshot:
                     with open(f"{path}.png", "wb") as file:
                         file.write(screenshot)
-
                     return True
                 else:
                     print("Erro: Captura de tela do elemento não está disponível.")
@@ -114,8 +113,9 @@ class Suframa(Interation):
         if text:
             # Excluir o arquivo de imagem após a leitura
             try:
-                os.remove(img)
-                print(f'Arquivo {img} excluído com sucesso.')
+                pass
+                # os.remove(img)
+                # print(f'Arquivo {img} excluído com sucesso.')
             except Exception as e:
                 print(f'Erro ao excluir o arquivo {img}: {str(e)}')
 
@@ -139,11 +139,12 @@ class Suframa(Interation):
     def select_taxa(self, option='TCIF'):
         self.select_option('//*[@id="ContentPlaceHolder1_dropTipoTaxa"]', text=option)
 
-    def verify_captcha(self):
+    def verify_login(self):
+        # Verfica se fez o login ou nao
+        'se nao tiver /login na url ele da true'
         try:
-            url_em_minusculas = self.driver.current_url.lower()
 
-    # Verifica se a palavra "login" está na URL
+            url_em_minusculas = self.driver.current_url.lower()
             if "login" in url_em_minusculas:
                 return False
             else:
@@ -151,10 +152,45 @@ class Suframa(Interation):
         except Exception as e:
             pass
 
+        return False
+
+    def check_alert_captcha(self):
+        # self.wait.until(EC.alert_is_present())
+        try:
+            try:
+                wait = WebDriverWait(self.driver, 5)
+                alert = wait.until(EC.alert_is_present())
+                print("Alerta encontrado. Texto do alerta:", alert.text)
+            except:
+                pass
+            # print("Alerta encontrado. Texto do alerta:", alert.text)
+            if 'imagem não confere!' not in alert.text:
+                # print("Texto do alerta:", alert.text)
+                return True
+            # print("Alerta encontrado. Texto do alerta:", alert.text)
+            # Faça algo com o alerta, por exemplo, aceite-o
+            # alert.accept()
+            return False
+        except Exception as e:
+            # print("Nenhum alerta encontrado dentro do prazo de espera.")
+            return False
+
+    def tratar_mes(self, date):
+        data_atual = datetime.now()
+        date = date.split('/')[1]
+        mes = data_atual.strftime('%m')
+        if date == mes:
+            return True
+
     def download_gru(self):
 
-        elements = len(self.elements('//tr/td/span')) + 2
-        print(elements)
+        try:
+            # //*[@id="ContentPlaceHolder1_gridSolicitacaoGrupo"]/tbody/tr[5]/td[3]
+            elements = len(self.elements('//tr/td/span')) + 1
+        except:
+            print(False)
+            return False
+        # print(elements)
 
         for i in range(2, elements):
 
@@ -162,69 +198,105 @@ class Suframa(Interation):
 
                 # print(i.get_attribute('outerHTML'))
                 # input_i = i.find_i('xpath', '//input')
-                print(f'//tr[{i}]/td/span/input')
-                self.click(f'//tr[{i}]/td/span/input')
-                time.sleep(1)
-                try:
-                    self.click('//*[@id="ContentPlaceHolder1_gridvisualisar_chkAllRow"]')
-                except Exception as e:
-                    print(e)
-                    print('click no box falhou, item', i)
-                print('item ', i)
-                time.sleep(1)
+                # print(f'//tr[{i}]/td/span/input')
+                path_date = f'//tr[{i}]/td[3]'
+                data = self.element(path_date).text
+                if self.tratar_mes(data):
+                    self.click(f'//tr[{i}]/td/span/input')
+                    time.sleep(1)
+                    try:
+                        self.click('//*[@id="ContentPlaceHolder1_gridvisualisar_chkAllRow"]')
+                    except Exception as e:
+                        pass
+                        # print(e)
+                        # print('click no box falhou, item', i)
+                    # print('item ', i)
+                    time.sleep(1)
             except StaleElementReferenceException:
                 # Captura a exceção e lida com isso aqui, se um elemento estiver "stale"
                 print(f"Elemento {i} não está mais no DOM.")
+
+        return True
 
     def avancar_click(self):
         self.click('//*[@id="ContentPlaceHolder1_LinkButton2"]')
 
     def gerar_gru_click(self):
         self.click('//*[@id="ContentPlaceHolder1_lbGerarGru"]')
-        self.click('//*[@id="ContentPlaceHolder1_lbImprimir"]')
+        try:
+            el = self.element('//*[@id="ContentPlaceHolder1_lbOk"]', 3)
+            el.click()
+        except:
+            el = False
+
+        if not el:
+            self.click('//*[@id="ContentPlaceHolder1_lbImprimir"]')
 
     def get_imprimir_gru(self):
         self.driver.get(
             'https://www4.suframa.gov.br/arrecadacao/Gru/ConsultarUsuarioExterno/ConsultarUsuarioExterno.aspx')
 
-    def inserir_datas(self, initial_date, final_date):
+    def inserir_datas(self, initial_date, final_date, name):
         self.select_option('//*[@id="ContentPlaceHolder1_DropDownPeriodo"]', '2')
         time.sleep(0.5)
         self.write('//*[@id="txtDtInicio"]', initial_date)
         self.write('//*[@id="txtDtFim"]', final_date)
+        try:
+            self.select_option('//*[@id="ContentPlaceHolder1_DropDownTipoTaxa"]', '1')
+            self.select_option('//*[@id="ContentPlaceHolder1_DropDownSitGru"]', '0')
 
-        self.select_option('//*[@id="ContentPlaceHolder1_DropDownTipoTaxa"]', '1')
-        self.select_option('//*[@id="ContentPlaceHolder1_DropDownSitGru"]', '0')
+            self.click('//*[@id="ContentPlaceHolder1_pesquisarGru"]')
 
-        self.click('//*[@id="ContentPlaceHolder1_pesquisarGru"]')
+            self.click('//*[@id="ContentPlaceHolder1_gridGRU_linkExtrato_0"]')
 
-        self.click('//*[@id="ContentPlaceHolder1_gridGRU_linkExtrato_0"]')
+            self.imprimir(name)
+            return True
 
+        except:
+            return False
+
+    def imprimir(self, name):
+        print(name)
         time.sleep(2)
         pyautogui.press('enter')
         time.sleep(2)
-        pyautogui.typewrite('extrato')
-        pyautogui.press('enter')
+        pyautogui.typewrite(name)
+        if not os.path.exists(name):
+            os.makedirs(name)
+        # pyautogui.press('enter')
 
-    def make_login(self, user, password):
-        if not self.verify_captcha():
+
+    def make_login(self, user, password, tentativas=10):
+
+        # login code 1
+        # terminou as tentativas code 2
+        if not self.verify_login():
+            # return True
             captcha = self.pass_captcha()
-            print('resultado do captcha', captcha)
             self.login(user, password, captcha)
-            while True:
 
-                if self.verify_captcha():
-                    break
-                alert = self.tratar_alert()
+            print('resultado do captcha', captcha)
 
-                if alert:
-                    break
-                time.sleep(1)
+            for _ in range(tentativas):
+
+                if self.check_alert_captcha():
+                    return True
+
+                if self.verify_login():
+                    return 'fez login'
                 captcha = self.pass_captcha()
 
                 self.login(user, password, captcha)
-                if self.verify_captcha():
-                    break
+                if self.verify_login():
+                    return 'fez login'
+
+                time.sleep(5)
+
+            if self.verify_login():
+                return 'fez login'
+            print('terminou o for')
+
+            return 'pausa'
 
 
 if __name__ == '__main__':
@@ -232,18 +304,36 @@ if __name__ == '__main__':
     # print(os.getcwd())
     # os.system('cls')
     print('start')
-    data_atual = datetime.datetime.now()
+    data_atual = datetime.now()
     ano = data_atual.strftime('%Y')
     mes = data_atual.strftime('%m')
     ano_mes = f'{ano}\\{mes}-{ano}'
     path = os.path.join(os.getcwd(),
                         f'1 - IMPOSTOS - TRIBUTOS - TAXAS\\1 - SUFRAMA\\{ano}\\{ano_mes}')
 
-    user = '5910245000250'
-    password = 'carga2023'
+    user = '09642884000152'
+    password = 'Portal2022'
 
     s = Suframa(path)
-    s.make_login(user, password)
+    # s.login(user, password)
+    login = s.make_login(user, password, 10)
+    if login:
+        if login == 'pausa':
+            start_time = time.time()
+            while True:
+                if s.verify_login():
+                    break
+
+                elapsed_time = time.time() - start_time
+                if elapsed_time >= 5*60:  # 300 segundos = 5 minutos
+                    print("Tempo limite de 5 minutos atingido. Saindo do loop.")
+                    break
+                time.sleep(5)
+
+        elif login != 'fez login':
+            print('Login errado ou acabou as tentativas')
+            time.sleep(5)
+
     # captcha = s.pass_captcha()
     # print('resultado do captcha', captcha)
 
@@ -252,12 +342,13 @@ if __name__ == '__main__':
     # s.get_gru()
     # s.select_taxa()
 
-    # s.download_gru()
-    # s.avancar_click()
-    # s.gerar_gru_click()
+    # if s.download_gru():
+    # pass
+#        s.avancar_click()
+ #       s.gerar_gru_click()
 
     s.get_imprimir_gru()
-    s.inserir_datas('01/10/2023', '31/10/2023')
+    s.inserir_datas('01/10/2023', '31/10/2023', path)
 
     try:
 
