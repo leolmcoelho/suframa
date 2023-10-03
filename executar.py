@@ -28,7 +28,7 @@ for index, row in df.iterrows():
         print('usuário: ', user)
         
         path = os.path.join(path, paste)
-        suframa = Suframa(path)
+        suframa = Suframa()
         # input('Enter')
         time.sleep(2)
         login = suframa.make_login(user, password, 3)
@@ -36,6 +36,7 @@ for index, row in df.iterrows():
             
             if login == 'pausa':
                 start_time = time.time()
+                timeout = False
                 while True:
                     if suframa.verify_login():
                         break
@@ -43,8 +44,12 @@ for index, row in df.iterrows():
                     elapsed_time = time.time() - start_time
                     if elapsed_time >= 5*60:  # 300 segundos = 5 minutos
                         print("Tempo limite de 5 minutos atingido. Saindo do loop.")
-                        continue
-                    time.sleep(5)
+                        timeout = True
+                        break
+                       
+                if timeout:
+                    continue
+                time.sleep(5)
                 
             elif login != 'fez login': 
                 print('Login errado ou acabou as tentativas')
@@ -84,6 +89,7 @@ for index, row in df.iterrows():
         
         print('terminou')
     except Exception as e:
-        df.at[index, 'Erro'] = True
-        df.to_excel('resultado.xlsx', index=False)
+       df.at[index, 'Erro'] = True
+       df.to_excel('resultado.xlsx', index=False)
+       print(e)
     # print(f'Erro na linha {index}: {str(e)}')
