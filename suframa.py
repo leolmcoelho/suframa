@@ -14,7 +14,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium import webdriver
 
 from bromo import Interation
-
+import shutil
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -32,7 +32,7 @@ os.environ['WDM_LOG'] = str(log.NOTSET)
 
 class Suframa(Interation):
 
-    def __init__(self, path):
+    def __init__(self):
 
         # options = webdriver.ChromeOptions()
         self.host = 'https://www4.suframa.gov.br/Login.aspx'
@@ -47,8 +47,9 @@ class Suframa(Interation):
         options.add_argument('--disable-animations')
         options.add_argument('--ignore-certificate-errors')
         # options.add_argument(f'--user-data-dir={perfil_usuario_dir}')
+        self.path = os.path.join(os.getcwd(), 'grus')
         options.add_experimental_option('prefs', {
-            'download.default_directory': path,
+            'download.default_directory': self.path,
             'download.prompt_for_download': False,
             'download.directory_upgrade': True,
             'safebrowsing.enabled': False,
@@ -221,7 +222,7 @@ class Suframa(Interation):
     def avancar_click(self):
         self.click('//*[@id="ContentPlaceHolder1_LinkButton2"]')
 
-    def gerar_gru_click(self):
+    def gerar_gru_click(self, name, destino):
         self.click('//*[@id="ContentPlaceHolder1_lbGerarGru"]')
         try:
             el = self.element('//*[@id="ContentPlaceHolder1_lbOk"]', 3)
@@ -230,8 +231,43 @@ class Suframa(Interation):
             el = False
 
         if not el:
-            self.click('//*[@id="ContentPlaceHolder1_lbImprimir"]')
+            self.click('//*[@id="ContentPlaceHolder1_lbImprimir"]')          
+            self.change_name_boleto(name)
+            self.change_path_boleto(name, self.path, destino)
+            
+            
+    def change_path_boleto(self, arquivo, pasta_origem, pasta_destino):
+        try:
+            # Monta o caminho completo do arquivo de origem
+            caminho_origem = os.path.join(pasta_origem, f'{arquivo}.pdf')
 
+            # Monta o caminho completo do arquivo de destino
+            caminho_destino = os.path.join(pasta_destino, f'{arquivo}.pdf')
+
+            # Move o arquivo
+            shutil.move(caminho_origem, caminho_destino)
+
+            print(f"O arquivo '{arquivo}.pdf' foi movido de '{pasta_origem}' para '{pasta_destino}'.")
+        except Exception as e:
+            print(f"Erro ao mover o arquivo: {str(e)}")
+    
+
+    def change_name_boleto(self, name):
+        
+        arquivos = os.listdir(self.path)
+        pdfs = [arquivo for arquivo in arquivos if arquivo.lower().endswith('.pdf')]
+        
+        if not pdfs:
+            print("Nenhum arquivo PDF encontrado na pasta de origem.")
+            return
+        
+        arquivo_pdf = pdfs[0]
+        novo_nome_pdf = os.path.join(self.path, name + '.pdf')
+        
+        os.rename(os.path.join(self.path, arquivo_pdf), novo_nome_pdf)
+        
+        
+        
     def get_imprimir_gru(self):
         self.driver.get(
             'https://www4.suframa.gov.br/arrecadacao/Gru/ConsultarUsuarioExterno/ConsultarUsuarioExterno.aspx')
@@ -250,6 +286,7 @@ class Suframa(Interation):
             self.click('//*[@id="ContentPlaceHolder1_gridGRU_linkExtrato_0"]')
 
             self.imprimir(name)
+            
             return True
 
         except:
@@ -261,9 +298,7 @@ class Suframa(Interation):
         pyautogui.press('enter')
         time.sleep(2)
         pyautogui.typewrite(name)
-        if not os.path.exists(name):
-            os.makedirs(name)
-        # pyautogui.press('enter')
+        pyautogui.press('enter')
 
 
     def make_login(self, user, password, tentativas=10):
@@ -345,7 +380,7 @@ if __name__ == '__main__':
     # if s.download_gru():
     # pass
 #        s.avancar_click()
- #       s.gerar_gru_click()
+        #s.gerar_gru_click()
 
     s.get_imprimir_gru()
     s.inserir_datas('01/10/2023', '31/10/2023', path)
